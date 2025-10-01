@@ -7,7 +7,11 @@ router.use("/about",function(req,res){
     res.sendFile(path.join(__dirname,"../views/users","about2.html"))
 })
 
-router.use("/üye",function(req,res){
+router.use("/member",function(req,res){
+    res.sendFile(path.join(__dirname,"../views/users","want_member.html"))
+})
+
+router.use("/contact",function(req,res){
     res.sendFile(path.join(__dirname,"../views/users","want_member.html"))
 })
 
