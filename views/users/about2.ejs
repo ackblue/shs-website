@@ -27,20 +27,7 @@
 
   <!-- Navbar -->
   <div class="w3-top">
-    <div class="w3-bar w3-red w3-card">
-      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="#" class="w3-bar-item w3-button w3-padding-large">Anasayfa</a>
-      <a href="/about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Hakkımızda</a>
-
-      <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-padding-large w3-button" title="More">Üyelik <i class="fa fa-caret-down"></i></button>     
-        <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="#" class="w3-bar-item w3-button">Üye Olmak İstiyorum</a>
-          <a href="#" class="w3-bar-item w3-button">Üyeyim</a>
-        </div>
-      </div>
-
-      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    <%- include('../partials/nav') %>
     </div>
   </div>
 
@@ -68,14 +55,7 @@
   </div>
   <!-- Footer / İletişim ve Sosyal Medya -->
 <footer class="w3-container w3-red w3-center w3-padding-32" style="margin-top: 60px;">
-  <p style="margin-bottom: 10px; font-weight: bold;">Bize Ulaşın:</p>
-  <p>
-    <i class="fa fa-phone"></i> +90 555 555 55 55 &nbsp; | &nbsp;
-    <i class="fa fa-envelope"></i> info@sosyalhizmetlersendikasi.org &nbsp; | &nbsp;
-    <i class="fa fa-instagram"></i> @sosyalhizmetler &nbsp; | &nbsp;
-    <i class="fa fa-twitter"></i> @SHSendikasi
-  </p>
-  <p>&copy; 2025 Sosyal Hizmetler Sendikası. Tüm Hakları Saklıdır.</p>
+  <%- include("../partials/footer") %>
 </footer>
 
   <!-- Bootstrap JS -->
