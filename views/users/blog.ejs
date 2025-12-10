@@ -54,72 +54,21 @@
   <!-- Blogs -->
   <div class="blog-container">
     <div class="row g-4">
-
-      <div class="col-md-4">
-        <div class="blog-card">
-          <img src="/static/img/blog1.jpg" class="blog-img">
-          <div class="blog-body">
-            <h3>Sözleşmeli Personel Hakları</h3>
-            <p>Yeni ek ödeme düzenlemeleri ve geçiş hakkı detayları...</p>
-            <a href="#" class="blog-read">Devamını Oku</a>
+      <% blogs.forEach(blog => { %>
+        <div class="col-md-4">
+          <div class="blog-card">
+            <img src="/static/img/<%= blog.resim %>" class="blog-img">
+            <div class="blog-body">
+              <h3><%= blog.baslik %></h3>
+              <p><%= blog.aciklama %></p>
+              <a href="#" class="blog-read">Devamını Oku</a>
+            </div>
           </div>
-        </div>
-      </div>
+        </div>           
+      <% }) %>
 
-      <div class="col-md-4">
-        <div class="blog-card">
-          <img src="/static/img/1.png" class="blog-img">
-          <div class="blog-body">
-            <h3>Ek 25 Ödemesi Nedir?</h3>
-            <p>Meslek gruplarına göre ödeme açıklamaları ve güncellemeler...</p>
-            <a href="#" class="blog-read">Devamını Oku</a>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-4">
-        <div class="blog-card">
-          <img src="/static/img/1.png" class="blog-img">
-          <div class="blog-body">
-            <h3>Sendikal Haklar Rehberi</h3>
-            <p>Başvuru ve dilekçe süreçleri hakkında kapsamlı rehber...</p>
-            <a href="#" class="blog-read">Devamını Oku</a>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-4">
-        <div class="blog-card">
-          <img src="/static/img/1.png" class="blog-img">
-          <div class="blog-body">
-            <h3>Nöbet Ücretleri</h3>
-            <p>Nöbet hesaplama ve ödeme tabloları ile güncel örnekler...</p>
-            <a href="#" class="blog-read">Devamını Oku</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="blog-card">
-          <img src="/static/img/1.png" class="blog-img">
-          <div class="blog-body">
-            <h3>Aile ve Sosyal Hizmetler Duyuruları</h3>
-            <p>Görev yeri değişiklikleri ve personel duyuruları...</p>
-            <a href="#" class="blog-read">Devamını Oku</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="blog-card">
-          <img src="/static/img/1.png" class="blog-img">
-          <div class="blog-body">
-            <h3>Performans Değerlendirme</h3>
-            <p>Performans sistemindeki değişikliklerin terfilere etkisi...</p>
-            <a href="#" class="blog-read">Devamını Oku</a>
-          </div>
-        </div>
-      </div>
 
     </div>
   </div>
